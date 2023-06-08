@@ -13,6 +13,18 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
+  var numeroString = '' ;
+  var numeroArreglado = [];
+  var numeroPegado = '';
+    
+    numeroString=num.toString();
+    for (var i = 0 ; i<numeroString.length; i++){
+      numeroArreglado.unshift(numeroString[i])
+    }
+
+    numeroPegado = numeroArreglado.join('')
+
+  return(num==numeroPegado);
 
 }
 
